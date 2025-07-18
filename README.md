@@ -1,6 +1,6 @@
 # 📉 Customer Churn Prediction
 
-This project is focused on predicting customer churn using machine learning. The goal is to identify customers who are likely to leave a company's services based on various demographic and behavioral features.
+This project is focused on predicting customer churn using Deep learning. The goal is to identify customers who are likely to leave a company's services based on various demographic and behavioral features.
 
 ---
 
@@ -14,7 +14,7 @@ Customer churn is when existing customers stop doing business with a company. Re
 
 - **Model Type**: Binary Classification
 - **Algorithm**: TensorFlow (Deep Neural Network)
-- **Accuracy**: ~XX% (update after training)
+- **Accuracy**: ~86% (update after training)
 - **Frameworks Used**: TensorFlow/Keras, scikit-learn, Pandas, Streamlit
 
 ---
@@ -77,18 +77,18 @@ Pandas, NumPy
 
 Streamlit
 
-Matplotlib / Seaborn
-
 📌 Project Structure
 bash
 Copy
 Edit
-├── app.py                  # Streamlit web app
-├── churn_model.h5          # Trained model
-├── preprocessors/          # Encoders, scalers
-├── dataset.csv             # Raw dataset
-├── requirements.txt        # Python dependencies
-└── README.md               # Project documentation
+├── app.py                   # Streamlit web app
+├── churn_model.h5           # Trained model
+├── onehot_encoder_geo.pkl   # Encoders(for Geography feature)
+├── label_encoder_gender.pkl  # Encoders(for Gender feature)
+├── scaler.pkl                # Scaler
+├── dataset.csv               # Raw dataset
+├── requirements.txt          # Python dependencies
+└── README.md                 # Project documentation
 📈 Future Improvements
 Add SHAP or LIME for interpretability
 
